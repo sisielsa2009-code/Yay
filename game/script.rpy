@@ -37,7 +37,9 @@ label place:
     show Emerald angry at right
     f "Ruby, we can't be friends anymore. You're too sensitive."
     menu:
-        "oh":
-            e "hsfhjk"
-        "oh yeah":
-            f "i hate you"
+        "Accept it and walk away":
+            e "That's cool. I never liked you anyway either."
+            f "Good I hope we never cross paths again!"
+        "Beg and ask her not to leave her.":
+            e "Please don't leave me! You're my only friend!"
+            f "Just get lost Ruby. I don't even wanna see you again."

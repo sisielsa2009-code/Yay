@@ -19,6 +19,10 @@ define config.check_conflicting_properties = True
 ## GUI Configuration Variables
 ################################################################################
 
+image background:
+    "background.png"
+    xysize(config.screen_width, config.screen_height)
+    fit 'cover'
 
 ## Colors ######################################################################
 ##
@@ -60,7 +64,7 @@ define gui.interface_text_color = '#ffffff'
 define gui.text_font = "DejaVuSans.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "Fonts/bonita.otf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "DejaVuSans.ttf"
@@ -87,8 +91,17 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.main_menu_background = "gui/background.png"
+define gui.game_menu_background = "gui/background.png"
+screen game_menu(Beginners_tutorial_on_how_to_feel_bonita, scroll=None, yinitial=0.0):
+    tag menu
+    add gui/background.png():
+        xpos 0.22
+        ypos 0.0
+        xysize (0.78,1.0)
+        fit 'cover'
+
+
 
 
 ## Dialogue ####################################################################
